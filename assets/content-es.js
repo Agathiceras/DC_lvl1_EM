@@ -72,7 +72,7 @@ COURSE.color = '#8B5CF6';
 COURSE.home = {
   kicker: '🎓 Formación de curso · [2199]',
   title: 'Creatividad Digital <span class="hl">1</span>',
-  lead: 'Para estudiantes de 8–9 años: un viaje por el espacio y el tiempo en la máquina del tiempo de Lumi, donde dibujan, crean personajes, inventan historias y terminan con su propio cortometraje animado. Dos módulos: el contenido del curso y la parte técnica de las lecciones.',
+  lead: 'Una aventura para estudiantes de 8 a 9 años que viajan por el espacio y el tiempo en la máquina del tiempo de Lumi. Durante el recorrido, dibujan, crean personajes, inventan historias y, finalmente, producen su propio cortometraje animado. La formación se divide en dos módulos: el contenido del curso y la parte técnica de las lecciones.',
   facts: [
     ['🧑‍💻', '<b>A tu ritmo.</b> Tu progreso se guarda en este navegador. Cada módulo termina con una verificación corta.'],
     ['⚡', '<b>Práctica incluida.</b> Una simulación de Kodland Sparks para practicar la publicación de proyectos y los problemas más comunes.']
@@ -81,8 +81,8 @@ COURSE.home = {
 
 /* Notes shown at the top of the home page */
 COURSE.notes = [
-  { kind:'pink', e:'🧭', html:'<b>Antes de empezar:</b> haz primero la <b>formación principal del Nuevo Modelo Educativo (EM)</b>. Esta formación del curso va después y parte de lo que ya viste allí: el Backoffice y las Teacher Notes, el Classroom con el Follow Mode, el recorrido por Kodland Sparks y la calidad de la lección.' },
-  { kind:'warn', e:'🔄', html:'<b>El contenido de las lecciones en el Backoffice se actualiza constantemente.</b> Con el feedback de estudiantes y tutores, las lecciones se mejoran todo el tiempo. No te preocupes: cuando haya cambios, se te avisará con anticipación para que prepares la lección.' }
+  { kind:'pink', e:'🧭', html:'<b>Antes de empezar:</b> haz primero la <b>formación principal del Nuevo Modelo Educativo (EM)</b>. Esta formación complementa los contenidos que ya has estudiado y profundiza en aspectos como el Backoffice y las Teacher Notes, el Classroom y su Follow Mode, el uso de Kodland Sparks y los criterios de calidad de las lecciones.' },
+  { kind:'warn', e:'🔄', html:'<b>El contenido de las lecciones en el Backoffice se actualiza constantemente.</b> Con el feedback de estudiantes y tutores, las lecciones se mejoran todo el tiempo. Si se realizan modificaciones en las lecciones, recibirás una notificación con anticipación para que puedas prepararte adecuadamente.' }
 ];
 
 /* ---------------- Modules ---------------- */
@@ -90,27 +90,27 @@ COURSE.modules = [
   { id:'m1', n:1, e:'🎨', color:'#8B5CF6', title:'El contenido del curso',
     desc:'Los datos generales del curso, lo que logra el estudiante y la primera lección del Módulo 1.',
     obj:'Prepárate para dar la primera lección de Creatividad Digital 1. En ella, los estudiantes de 8–9 años llegan al Mundo Píxel, eligen el tema de su propio juego, dibujan su ícono en pixel art en Kodland Sparks y lo publican.',
-    offer:[['🕰️','Conocer los datos generales del curso y su historia.'],['🏆','Saber qué logra el estudiante al final del curso.'],['📖','Saber qué pasa en la primera lección.'],['📘','Revisar la primera lección en el Backoffice.']],
+    offer:[['🕰️','Conocer los datos generales del curso y su programa.'],['🏆','Saber qué logra el estudiante al final del curso.'],['📖','Saber qué pasa en la primera lección.'],['📘','Revisar la primera lección en el Backoffice.']],
     sections:[
       { id:'ov', e:'🕰️', title:'El curso', blocks:[
         { t:'meta', items:[['🧒','Edad','8–9 años'],['⏱️','Lección','60 min en grupo · 50 min individual'],['📚','Programa','40 lecciones · 10 módulos'],['🌱','Nivel','Principiante']] },
-        { t:'p', html:'Los estudiantes viajan por el espacio y el tiempo en la <b>máquina del tiempo de Lumi</b>, la mascota del curso. Cada mundo es una nueva parada: el Mundo Píxel, la era de los dinosaurios, un reino mágico, un planeta lejano, la era de los descubrimientos científicos… En cada uno aprenden a usar herramientas digitales para crear algo propio.' },
+        { t:'p', html:'<b>Dibujamos personajes y creamos nuestra propia caricatura.</b> De los primeros dibujos a historias que cobran vida: ilustraciones y personajes, cómic, modelo 3D, animación y edición, y una caricatura con voces. Empezamos con dibujos pixelados y animaciones sencillas. Después probamos la ilustración, creamos personajes, modelos 3D y cómics, y aprendemos a editar video. Todo esto sirve para su propia caricatura. Al principio el profesor muestra pasos cortos, y con el tiempo el niño hace cada vez más por su cuenta.' },
         { t:'trio', items:[
-          ['🎬','Primero el resultado','Cada lección empieza mostrando a dónde se llega: un ícono, un personaje, una animación. Luego el estudiante elige su propia idea y la hace realidad.'],
+          ['🎬','Primero el resultado','Cada lección comienza presentando el resultado que los estudiantes podrán alcanzar, ya sea un ícono, un personaje o una animación. Luego el estudiante elige su propia idea y la hace realidad.'],
           ['🙋','La idea es del estudiante','El tema, el personaje y la historia los elige el estudiante. Tú le das opciones y pistas, pero <b>no dibujas por él</b>.'],
           ['🔍','Equivocarse es parte del proceso','No se exige un dibujo perfecto: se compara el antes y el después, y se celebra cada intento y cada mejora.']
         ]},
-        { t:'callout', kind:'good', e:'⚡', html:'Desde la primera lección, los estudiantes trabajan y publican en <b>Kodland Sparks</b>: allí dibujan y allí empieza su portafolio.' }
+        { t:'callout', kind:'good', e:'⚡', html:'Desde la primera lección, los estudiantes utilizan <b>Kodland Sparks</b> para realizar y publicar sus trabajos. De esta manera, comienzan a construir su portafolio digital desde el inicio del curso.' }
       ]},
       { id:'achieve', e:'🏆', title:'Lo que logra el estudiante', blocks:[
         { t:'p', html:'Al terminar el curso, el estudiante:' },
         { t:'cards', cols:2, items:[
-          ['👾','Dibuja en la computadora','Crea ilustraciones, desde el pixel art de las primeras lecciones hasta dibujos más completos.'],
-          ['🦸','Diseña personajes','Inventa sus propios personajes y los dibuja con su pose, sus colores y sus detalles.'],
-          ['💬','Cuenta historias','Aprende las reglas de la narración y las cuenta con cómics y guiones gráficos.'],
-          ['🧊','Da sus primeros pasos en 3D','Desarrolla el pensamiento espacial y conoce lo básico del modelado 3D.'],
-          ['🎬','Anima','Crea animaciones, primero cuadro por cuadro y luego con fotogramas clave.'],
-          ['🎓','Presenta su cortometraje','Termina el curso con un <b>cortometraje animado con sonido</b> sobre su propia historia y lo presenta al grupo.']
+          ['🦸','Dibuja sus propios héroes','Crea ilustraciones y personajes, elige colores, trabaja con capas y prueba el modelado 3D.'],
+          ['🎬','Da vida a historias','Inventa una trama, anima dibujos y une escenas y sonido en una caricatura corta.'],
+          ['🗂️','Arma su portafolio','Al menos ocho trabajos de los módulos y la caricatura final. El niño muestra sus proyectos y explica sus decisiones.'],
+          ['🤖','IA en proyectos creativos','Con ayuda de la IA, el niño inventa textos y tramas, genera imágenes y crea escenas completas a partir de sus dibujos. Qué conservar, qué cambiar y cómo usar el resultado lo decide él mismo.'],
+          ['🏠','Un portafolio que crece','El trabajo principal se hace en clase. En casa, pequeñas mejoras y tareas creativas de hasta 20–30 minutos. Después de la primera clase y de cada módulo, los padres reciben un mensaje con lo que se logró.'],
+          ['🧠','Habilidades para la vida','Creatividad, trabajo en equipo, comunicación y pensamiento crítico: compara opciones, revisa el resultado y evalúa por sí mismo las sugerencias de la IA.']
         ]}
       ]},
       { id:'les', e:'📖', title:'La primera lección', blocks:[
@@ -123,7 +123,7 @@ COURSE.modules = [
                  ['📌','Puntos a tener en cuenta','<ul><li>Mantén breve la presentación del grupo.</li><li>Activa el <b>modo de seguimiento</b> en las tarjetas: los estudiantes hacen clic, eligen y arrastran por sí mismos. Muestra el ejemplo de animación con sonido.</li><li>Las sombras y los brillos son opcionales.</li><li><b>Si no alcanza el tiempo:</b> reduce o salta la actividad de mejora. Si empieza después del minuto 00:37, pasen directamente a publicar y entregar. Reserva tiempo para el recorrido del curso y el cierre.</li></ul>'],
                  ['⚙️','Aspectos técnicos','<ul><li>Pide guardar el trabajo en una <b>Ranura (Slot)</b> antes de pasar a la siguiente actividad. Si el editor aparece vacío: <b>Slot → elegir el trabajo → Cargar</b>.</li><li>Hay <b>dos botones «Publicar»</b>: uno en el editor y otro al final de la página de publicación.</li><li>El enlace que se envía es el del <b>proyecto publicado</b> (se abre con <b>Verlo en Kodland Sparks</b>), no la dirección del editor.</li><li>Misión para la casa: escribir tres frases sobre su juego o dibujo animado favorito y el proyecto que sueña crear, y unirse al chat del grupo.</li></ul>']] }
         ]},
-        { t:'callout', kind:'tip', e:'🗺️', html:'La primera Teacher Note de la lección tiene el plan completo: descripción, misión de la historia, objetivo, resultado clave, la duración de cada etapa y un video de preparación. Cada tarjeta tiene además su propia nota. <b>Lee todas las Teacher Notes y mira el video antes de la clase.</b>' }
+        { t:'callout', kind:'tip', e:'🗺️', html:'La primera Teacher Note de cada lección contiene el plan completo, incluyendo la descripción, la misión de la historia, el objetivo, el resultado clave, la duración de cada etapa y un video de preparación. Además, cada tarjeta cuenta con su propia nota. <b>Lee todas las Teacher Notes y mira el video antes de impartir la clase.</b>' }
       ]},
       { id:'bo', e:'📘', title:'Revisa la primera lección en el Backoffice', blocks:[
         { t:'p', html:'Antes de la verificación, abre el curso en el Backoffice y revisa la primera lección a tu ritmo: allí están todas las tarjetas de actividad y las Teacher Notes. No hay límite de tiempo.' },
@@ -134,7 +134,7 @@ COURSE.modules = [
 
   { id:'m2', n:2, e:'⚙️', color:'#F03D9E', title:'La parte técnica de las lecciones',
     desc:'Entrar a Sparks, guardar el trabajo, publicar con el enlace correcto y qué hacer cuando algo falla.',
-    obj:'Conoce lo que hace que una lección de Creatividad Digital 1 funcione en la parte técnica: el acceso a Kodland Sparks, guardar el trabajo en una ranura, publicar y enviar el enlace del proyecto publicado, y cómo resolver los problemas más comunes.',
+    obj:'Conoce los aspectos técnicos necesarios para desarrollar una lección de Creatividad Digital 1, desde el acceso a Kodland Sparks y el almacenamiento de los trabajos en una ranura hasta la publicación de los proyectos y el envío de sus respectivos enlaces. También aprenderás a resolver los problemas más comunes.',
     needs:['sparksPublish'],
     offer:[['🔑','Ayudar a entrar a Sparks con la cuenta de Kodland.'],['💾','Hacer que nadie pierda su dibujo.'],['🔗','Publicar y enviar el enlace correcto.'],['🛠️','Resolver los problemas más comunes.']],
     sections:[
@@ -147,7 +147,7 @@ COURSE.modules = [
         ]}
       ]},
       { id:'access', e:'🔑', title:'Entrar a Kodland Sparks', blocks:[
-        { t:'p', html:'Los estudiantes no necesitan instalar nada: el editor de pixel art de Sparks se abre dentro de la tarjeta de la lección, en el navegador.' },
+        { t:'p', html:'Los estudiantes no necesitan instalar ningún programa, ya que el editor de pixel art de Sparks se abre directamente desde la tarjeta de la lección en el navegador.' },
         { t:'steps', items:[
           ['Entrar con Kodland','El estudiante hace clic en <b>Entrar con Kodland</b> y usa el <b>mismo usuario y contraseña</b> de la plataforma de Kodland. No hace falta una cuenta nueva.'],
           ['Dejar de compartir pantalla','Si el estudiante está compartiendo pantalla, debe <b>dejar de compartirla antes de escribir la contraseña</b>.'],
@@ -156,7 +156,7 @@ COURSE.modules = [
         { t:'callout', kind:'tip', e:'💡', html:'¿No puede entrar? Que revise que usa los datos de la plataforma de Kodland, que pruebe <b>otro navegador</b> y que levante la mano para que lo ayudes. Para problemas técnicos importantes, contacta al equipo de soporte.' }
       ]},
       { id:'publish', e:'📤', title:'Publicar en Kodland Sparks', blocks:[
-        { t:'p', html:'Estos son los pasos de cada entrega. Aquí aparecen los problemas que llegan a ti: el enlace que no abre o el enlace que lleva al editor.' },
+        { t:'p', html:'A continuación, se presentan los pasos que deben seguirse en cada entrega, junto con los problemas más comunes que pueden presentarse, como recibir un enlace que no abre o que dirige directamente al editor.' },
         { t:'steps', items:[
           ['Publicar en el editor','El botón <b>Publicar</b> de la esquina superior derecha del editor abre la página de publicación.'],
           ['Ponerle nombre al proyecto','Un nombre que permita reconocer el trabajo. Un proyecto sin nombre es difícil de encontrar después en el portafolio.'],
@@ -172,18 +172,20 @@ COURSE.modules = [
           ['🆘','El editor aparece vacío','El trabajo se guardó en una ranura: <b>Slot → elegir el trabajo → Cargar</b>. Por eso es clave guardar antes de cambiar de tarjeta.'],
           ['🔗','El enlace lleva al editor, no al proyecto','El estudiante copió la dirección del editor. Que abra <b>Verlo en Kodland Sparks</b> (o <b>My projects</b> → el proyecto publicado) y copie la dirección de esa página.'],
           ['🔒','El enlace del estudiante no abre','El proyecto se guardó como <b>Only me</b> (aparece la etiqueta <b>Private project</b>). Pídele: <b>My projects → abrir el proyecto → Edit → Public → Publish</b>. El enlace sigue siendo el mismo.'],
-          ['📨','Publicó, pero el enlace no llegó','Publicar en Sparks no es entregar: falta pegar el enlace en la tarjeta y hacer clic en <b>Enviar</b>. Revisa en el Backoffice que los enlaces llegaron.'],
+          ['📨','Publicó, pero el enlace no llegó','Publicar un proyecto en Sparks no significa que la entrega esté completa. El estudiante también debe pegar el enlace del proyecto publicado en la tarjeta correspondiente y hacer clic en <b>Enviar</b>. Después, verifica en el Backoffice que los enlaces se hayan recibido correctamente.'],
           ['🔍','Los píxeles se ven demasiado grandes','Revisa el tamaño del lienzo con su botón y elige <b>64 × 64 píxeles</b>.'],
-          ['🪞','La sombra aparece en los dos lados','El dibujo simétrico está activado: hay que desactivarlo para dibujar solo en un lado.']
+          ['🪞','La sombra aparece en los dos lados','La opción de dibujo simétrico está activada. Para dibujar únicamente en uno de los lados, es necesario desactivar esta función.']
         ]}
       ]},
       { id:'req', e:'🖥️', title:'Requisitos del equipo', blocks:[
         { t:'p', html:'Recuérdalos a las familias y tenlos presentes si algo no funciona en la computadora del estudiante:' },
         { t:'cards', cols:2, items:[
-          ['🖥️','Computadora','Laptop o computadora con <b>teclado y mouse</b>. No tablet ni teléfono.'],
-          ['💻','Sistema y navegador','<b>Windows 10/11 (64 bits)</b> o <b>macOS 11.2 o posterior</b>, con <b>Google Chrome</b> instalado.'],
-          ['🧠','Procesador y memoria','Procesador de 64 bits (mínimo 2 núcleos a 2 GHz; recomendado 4 núcleos a 2,5 GHz) y 8–16 GB de RAM.'],
-          ['🎧','Conexión y equipo','Internet estable desde <b>10 Mbit/s</b>. Se recomiendan micrófono y cámara.']
+          ['🖥️','Computadora','Computadora de escritorio o laptop. Las clases se toman en una computadora: no sirven tabletas ni celulares.'],
+          ['💻','Sistema y navegador','<b>Windows 10/11 (64 bits)</b> o <b>macOS 11.2 o posterior</b>, con el navegador <b>Google Chrome</b>.'],
+          ['🧠','Procesador y memoria','Procesador de 64 bits: al menos 2 núcleos y 2 GHz; se recomiendan 4 núcleos y 2,5 GHz. Memoria RAM: 8–16 GB.'],
+          ['🎧','Conexión y equipo','Conexión a internet estable de al menos <b>10 Mbit/s</b>. <b>Mouse, teclado, micrófono y cámara.</b>'],
+          ['📧','Cuenta de Google','Correo de Google del estudiante o de su madre o padre.'],
+          ['🖱️','Para empezar','Saber abrir enlaces, usar el mouse y cambiar de pestaña.']
         ]}
       ]},
       { id:'check', e:'✅', title:'Checklist técnico de cada lección', blocks:[
@@ -241,7 +243,7 @@ COURSE.quiz = {
 
 /* ---------------- Final screen ---------------- */
 COURSE.done = {
-  title: '¡Módulos completados!',
+  title: 'Último paso: vuelve al LMS y completa el DST',
   html: `<p>¡Ya casi terminas! Vuelve a la página de la formación en el LMS, desde donde entraste a esta formación. El test DST está justo debajo de la formación.</p>
     <p>👉 <b>Debes hacer y aprobar el test DST para que la formación se considere completada.</b> Si no haces el DST, la formación quedará incompleta y puede vencer.</p>
     <p>La nota mínima para aprobar es <b>80%</b>.</p>
