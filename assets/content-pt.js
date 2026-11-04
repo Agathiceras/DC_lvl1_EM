@@ -146,6 +146,14 @@ COURSE.modules = [
           ['⏱️','Proteger o tempo para publicar e encerrar','<p>A publicação e o envio do link (00:40–00:50), o tour pelo curso e o encerramento <b>não são cortados</b>.</p><ul><li>Se o grupo atrasar, reduza ou pule a atividade extra de melhoria.</li><li>Se a melhoria começar depois de 00:37, passem direto para publicar e entregar.</li><li>Sombras e brilhos são opcionais: o aluno pode terminar uma mudança pendente depois da aula.</li></ul>']
         ]}
       ]},
+      { id:'class', e:'🧭', title:'Situações em aula', blocks:[
+        { t:'p', html:'Nas aulas de Criatividade Digital 1, há três momentos que se repetem e que decidem se a aula flui: o início técnico, um aluno que trava e os alunos que quase não falam. Abra cada um:' },
+        { t:'acc', open:false, items:[
+          ['🖥️','Suporte técnico no início: ninguém começa sem estar com tudo aberto','<p>Antes de ensinar algo novo, garanta que <b>todos</b> estejam com tudo o que precisam aberto: o cartão da aula, o editor do Kodland Sparks com a sessão iniciada e a tela de desenho pronta. Se um aluno começa atrasado, perde as primeiras instruções e depois fica mais difícil colocá-lo em dia.</p><ul><li>Peça que cada um mostre a tela ou confirme que está vendo o editor aberto.</li><li>Dê <b>uma ação por vez</b>: “Cliquem em Expandir”. Espere <b>todos</b> repetirem antes de dar a próxima.</li><li>Se alguém não conseguir, resolva antes de avançar; os outros podem esperar alguns segundos ou explorar a paleta de cores.</li></ul><p>💬 <b>O que dizer:</b> <i>“Antes de começar, levantem o polegar quando virem a tela em branco. Muito bem, a Sofia e o Tomás já estão prontos… vamos esperar o Mateus. Pronto, todos! Agora sim, vamos começar.”</i></p>'],
+          ['🆘','Quando um aluno diz que está com dificuldade','<p>Quando um aluno diz “não consigo” ou “não entendi”, mostre logo que você ouviu, mesmo que naquele momento esteja ajudando outra pessoa. Um “Já vou te ajudar!” ou “Termino este passo e vou com você” basta para que ele se sinta acompanhado e continue tentando com confiança.</p><ul><li>Responda na hora: “Estou te ouvindo, Mateus”.</li><li>Se estiver explicando algo para o grupo, diga quando vai atendê-lo: “Termino de mostrar este passo e vou com você”.</li><li>Ajude esse aluno <b>sem parar o grupo</b>: deixe para os outros uma tarefa curta e clara (por exemplo, “escolham três cores para o ícone”) e depois atenda quem precisa.</li><li>Guie com perguntas ou dicas; não faça o trabalho por ele.</li></ul><p>💬 <b>O que dizer:</b> <i>“Obrigado por avisar, Lúcia. Pessoal, testem a ferramenta de preenchimento no desenho de vocês. Lúcia, me mostra sua tela: o que acontece quando você clica aqui?”</i></p>'],
+          ['🙋','Fazer participar quem quase não responde','<p>Alguns alunos quase nunca falam, por timidez ou porque não têm certeza da resposta. Para que participem, faça <b>perguntas fáceis de responder</b>:</p><ul><li><b>Escolher entre duas opções:</b> “O seu ícone vai ser de dia ou de noite?”</li><li><b>Mostrar na tela:</b> “Me mostra com o cursor onde está a borracha”.</li><li><b>Sim ou não:</b> “Você já salvou o desenho em um slot?”</li></ul><p><b>Nem todos precisam responder pelo microfone.</b> Ofereça outras formas de participar:</p><ul><li><b>Um sinal na câmera:</b> polegar para cima ou para baixo, ou mostrar com os dedos o número da opção (1 ou 2).</li><li><b>Uma reação com emoji</b> na videochamada: 👍 se já terminou, ✋ se precisa de ajuda.</li><li><b>Uma mensagem no chat:</b> uma palavra, uma cor ou o nome do jogo.</li></ul><p>Varie a forma de uma aula para outra e observe com qual cada aluno se sente mais à vontade. Se alguém sempre responde pelo chat, comece por aí e, quando ganhar confiança, convide-o aos poucos a usar o microfone.</p><ul><li><b>Dê tempo para pensar.</b> Faça a pergunta e espere alguns segundos em silêncio antes de repetir ou dar uma dica.</li><li><b>Não responda pelo aluno.</b> Se ele não responder, dê uma dica ou reduza a pergunta a duas opções, mas deixe a resposta sair dele.</li><li><b>Comemore cada tentativa</b>, seja pelo microfone, pelo chat ou com um emoji.</li></ul><p>💬 <b>O que dizer:</b> <i>“Martina, o seu jogo é mais de aventura ou de mistério? Pode me dizer ou escrever no chat.”</i> (espere) <i>“Mistério! Que cor você acha que passa mistério? Mostra 1 dedo para roxo ou 2 para preto.”</i></p>']
+        ]}
+      ]},
       { id:'access', e:'🔑', title:'Entrar no Kodland Sparks', blocks:[
         { t:'p', html:'Os alunos não precisam instalar nada: o editor de pixel art do Kodland Sparks abre dentro do cartão da aula, no navegador.' },
         { t:'steps', items:[
@@ -191,7 +199,7 @@ COURSE.modules = [
       { id:'check', e:'✅', title:'Checklist técnico de cada aula', blocks:[
         { t:'check', title:'✅ Meu checklist técnico', groups:[
           { h:'☑️ Antes da aula', items:['Li todas as Teacher Notes da aula e assisti ao vídeo de preparação.','Fiz eu mesmo o caminho da aula no editor do Kodland Sparks: desenhar, salvar, publicar e copiar o link.'] },
-          { h:'🎬 Durante a aula', items:['Ativei o Follow Mode nos cartões e mostrei uma ação por vez.','Os alunos salvaram o trabalho em um slot antes de mudar de atividade.','Se o grupo atrasou, reduzi a atividade de melhoria e protegi o tempo de publicação.'] },
+          { h:'🎬 Durante a aula', items:['Antes de ensinar, conferi se <b>todos</b> estavam com o cartão e o editor do Kodland Sparks abertos.','Esperei todos repetirem cada ação antes de dar a próxima.','Ativei o Follow Mode nos cartões e mostrei uma ação por vez.','Respondi na hora a quem disse que estava com dificuldade, ou disse quando voltaria para ajudá-lo.','Fiz perguntas fáceis de responder aos alunos que quase não participam e dei tempo para pensar.','Os alunos salvaram o trabalho em um slot antes de mudar de atividade.','Se o grupo atrasou, reduzi a atividade de melhoria e protegi o tempo de publicação.'] },
           { h:'📤 No fim da aula', items:['Todos publicaram no Kodland Sparks e enviaram o link do <b>projeto publicado</b> com o botão de envio.','Abri alguns links para conferir se estão funcionando.','Expliquei a missão para casa e mostrei onde ela fica na plataforma.'] }
         ]}
       ]}
@@ -237,7 +245,15 @@ COURSE.quiz = {
     { ctx:'O link de um aluno não abre, e no portfólio dele o projeto aparece como “Private project”.',
       q:'O que ele deve fazer?',
       o:['My projects → abrir o projeto → Edit → Public → Publish.','Mandar o desenho pelo chat.','Criar um projeto novo.'],
-      a:0, e:'O projeto foi salvo como Only me. Com Edit → Public, o mesmo link passa a abrir para todos.' }
+      a:0, e:'O projeto foi salvo como Only me. Com Edit → Public, o mesmo link passa a abrir para todos.' },
+    { ctx:'Você está mostrando ao grupo como usar a ferramenta de preenchimento e o Mateus escreve: “Não consigo, não entendi”.',
+      q:'O que você faz?',
+      o:['Continua explicando e o atende quando a aula terminar.','Responde na hora, diz que vai até ele ao terminar o passo, deixa uma tarefa curta para o grupo e depois o ajuda.','Para a aula toda e faz o desenho por ele para que não se atrase.'],
+      a:1, e:'Responder na hora evita que o aluno se sinta ignorado. Com uma tarefa curta para o grupo, você consegue ajudá-lo sem parar os outros, e o guia sem fazer o trabalho por ele.' },
+    { ctx:'A Martina quase nunca responde. Você pergunta: “Qual é o tema do seu jogo?” e ela fica em silêncio.',
+      q:'O que você faz?',
+      o:['Responde por ela para não perder tempo: “Deve ser de aventura, né?”.','Pergunta para outro aluno e segue.','Espera alguns segundos e, se ela continuar sem responder, dá duas opções e diz que ela também pode responder pelo chat ou com os dedos na câmera.'],
+      a:2, e:'Perguntas de escolher entre duas opções, de sim/não ou de mostrar na tela são fáceis de responder. Dar tempo para pensar, oferecer formas de responder sem microfone e não responder pelo aluno faz a resposta sair dele.' }
   ]
 };
 
