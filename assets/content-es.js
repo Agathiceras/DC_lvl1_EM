@@ -24,6 +24,8 @@ COURSE.ui = {
   ctaTitle: 'Verificación del módulo',
   ctaText: '{n} preguntas cortas. Necesitas 70% o más para aprobar.',
   lockSim: '🔒 Completa la simulación de publicación en Kodland Sparks (arriba) para desbloquear la verificación.',
+  linkDone: '✅ Curso abierto en el Backoffice',
+  linkTodo: '○ Todavía no has abierto el curso en el Backoffice',
   startCheck: 'Empezar la verificación →',
   retake: '🔁 Repetir la verificación',
   qmeta: '{e} Verificación del Módulo {n} · Pregunta {i} de {total}',
@@ -90,6 +92,8 @@ COURSE.modules = [
   { id:'m1', n:1, e:'🎨', color:'#8B5CF6', title:'El contenido del curso',
     desc:'Los datos generales del curso, lo que logra el estudiante y la primera lección del Módulo 1.',
     obj:'Prepárate para dar la primera lección de Creatividad Digital 1. En ella, los estudiantes de 8–9 años llegan al Mundo Píxel, eligen el tema de su propio juego, dibujan su ícono en pixel art en Kodland Sparks y lo publican.',
+    needs:['boCourse'],
+    lockMsg:'🔒 Abre el curso en el Backoffice (sección «Revisa la primera lección en el Backoffice») y revisa la lección para desbloquear la verificación.',
     offer:[['🕰️','Conocer los datos generales del curso y su programa.'],['🏆','Saber qué logra el estudiante al final del curso.'],['📖','Saber qué pasa en la primera lección.'],['📘','Revisar la primera lección en el Backoffice.']],
     sections:[
       { id:'ov', e:'🕰️', title:'El curso', blocks:[
@@ -127,7 +131,8 @@ COURSE.modules = [
       ]},
       { id:'bo', e:'📘', title:'Revisa la primera lección en el Backoffice', blocks:[
         { t:'p', html:'Antes de la verificación, abre el curso en el Backoffice y revisa la primera lección a tu ritmo: allí están todas las tarjetas de actividad y las Teacher Notes. No hay límite de tiempo.' },
-        { t:'link', href:'https://bo.kodland.org/courses/2199', e:'📘', title:'Abrir el curso en el Backoffice', small:'[2199] Creatividad Digital 1 — las lecciones y sus Teacher Notes' },
+        { t:'callout', kind:'pink', e:'📌', html:'Para que estés preparado para tu primera clase, es importante que revises cómo se presentan los materiales del curso.<br><br>Recuerda que se trata de un nuevo ID de curso: <b>2199</b>.<br><br><b>Importante:</b> revisa cada uno de los grupos que tienes asignados. Si has recibido un grupo nuevo, asegúrate de verificar el ID del curso, estudiar la lección correspondiente y seguir las notas para el tutor. Esto te ayudará a preparar y desarrollar una clase exitosa.<br><br><b>Una vez que hayas revisado la lección, podrás desbloquear el siguiente módulo.</b>' },
+        { t:'link', flag:'boCourse', href:'https://bo.kodland.org/courses/2199', e:'📘', title:'Abrir el curso en el Backoffice', small:'[2199] Creatividad Digital 1 — las lecciones y sus Teacher Notes' },
         { t:'callout', kind:'warn', e:'🔄', html:'El contenido de las lecciones en el Backoffice se seguirá actualizando con el feedback de estudiantes y tutores. Cuando haya cambios, se te avisará con anticipación para que prepares la lección.' }
       ]}
     ]},

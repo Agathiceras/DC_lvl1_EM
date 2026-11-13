@@ -132,7 +132,8 @@ const BLOCK = {
   sorter: b => `<div class="sorter">${b.items.map(r => `<div class="srow" data-ans="${r[2]}"><span class="sei">${r[0]}</span><span class="stx">${r[1]}</span><span class="sbtns"><button data-pick="yes">${b.yes}</button><button data-pick="no">${b.no}</button></span><span class="sfb">${r[3]}</span></div>`).join('')}</div>`,
   check: b => `<div class="card"><div class="wh"><b>${b.title}</b><span class="tag">${UI.checkTag}</span></div>${b.groups.map((g, gi) => `<div class="ckgroup">${g.h}</div><div class="cklist">${g.items.map((t, i) => `<button class="ck" data-ck="${gi}-${i}"><span class="ckb"></span><span>${t}</span></button>`).join('')}</div>`).join('')}</div>`,
   figure: b => `<figure class="cfig"><img src="${b.src}" alt="" loading="lazy"><figcaption>${b.caption}</figcaption></figure>`,
-  link: b => `<a class="linkcard" href="${b.href}" target="_blank" rel="noopener"><span>${b.e}</span><div><b>${b.title}</b><small>${b.small}</small></div><span class="go">${UI.linkOpen}</span></a>`,
+  // A link can be a required step: with b.flag, opening it is recorded and m.needs can wait for it
+  link: b => `<a class="linkcard" href="${b.href}" target="_blank" rel="noopener"${b.flag ? ` data-linkflag="${b.flag}"` : ''}><span>${b.e}</span><div><b>${b.title}</b><small>${b.small}</small></div><span class="go">${UI.linkOpen}</span></a>${b.flag ? `<div class="simstate" data-linkstate="${b.flag}" style="margin:10px 0 0 8px">${flag(b.flag) ? (UI.linkDone || '✅') : (UI.linkTodo || '○')}</div>` : ''}`,
   // Lessons of the module: tabs + accordion (filled by initWidgets)
   lessons: b => `<div class="ltabs" data-lessons="${b.key}">${b.items.map((l, i) => `<button data-lt="${i}">${l.e} ${l.tab}</button>`).join('')}</div><div class="lpanel" data-lpanel="${b.key}"></div>`,
   // Real student projects published on Kodland Sparks
@@ -193,7 +194,7 @@ const simsMissing = m => (m.needs || []).filter(f => !flag(f));
 function ctaHTML(m){
   const miss = simsMissing(m), ready = !miss.length;
   return `<span class="e">${passed(m.id) ? '🏅' : '📝'}</span>
-    <div class="grow"><h3>${UI.ctaTitle}</h3><p>${tx('ctaText', { n:(C.quiz[m.id] || []).length })}</p>${ready ? '' : `<div class="lockmsg">${UI.lockSim}</div>`}</div>
+    <div class="grow"><h3>${UI.ctaTitle}</h3><p>${tx('ctaText', { n:(C.quiz[m.id] || []).length })}</p>${ready ? '' : `<div class="lockmsg">${m.lockMsg || UI.lockSim}</div>`}</div>
     <button class="btn-y" id="startCheck" ${ready ? '' : 'disabled'}>${passed(m.id) ? UI.retake : UI.startCheck}</button>`;
 }
 const refreshCTA = m => { const c = $('#mcta'); if (c) c.innerHTML = ctaHTML(m); };
@@ -233,6 +234,13 @@ function initWidgets(m){
     $$('button', tabs).forEach(x => x.onclick = () => draw(+x.dataset.lt));
     draw(0);
   });
+  // Required links (e.g. the course in the Backoffice): opening one unlocks what waits for it
+  $$('[data-linkflag]').forEach(a => a.addEventListener('click', () => {
+    const f = a.dataset.linkflag; if (flag(f)) return;
+    setFlag(f, true);
+    $$(`[data-linkstate="${f}"]`).forEach(x => x.innerHTML = UI.linkDone || '✅');
+    refreshCTA(m);
+  }));
   // Simulations opened inside the page
   $$('[data-simopen]').forEach(btn => btn.onclick = () => {
     const f = btn.dataset.simopen, box = $(`[data-simframe="${f}"]`);

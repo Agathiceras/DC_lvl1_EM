@@ -24,6 +24,8 @@ COURSE.ui = {
   ctaTitle: 'Verificação do módulo',
   ctaText: '{n} perguntas curtas. Acerte 70% ou mais para passar.',
   lockSim: '🔒 Conclua a simulação de publicação no Kodland Sparks (acima) para liberar a verificação.',
+  linkDone: '✅ Curso aberto no Backoffice',
+  linkTodo: '○ Você ainda não abriu o curso no Backoffice',
   startCheck: 'Começar a verificação →',
   retake: '🔁 Refazer a verificação',
   qmeta: '{e} Verificação do Módulo {n} · Pergunta {i} de {total}',
@@ -90,6 +92,8 @@ COURSE.modules = [
   { id:'m1', n:1, e:'🎨', color:'#8B5CF6', title:'O conteúdo do curso',
     desc:'Os dados gerais do curso, o que o aluno conquista e a primeira aula do Módulo 1.',
     obj:'Prepare-se para dar a primeira aula de Criatividade Digital 1. Nela, os alunos de 8–9 anos chegam ao Mundo Pixel, escolhem o tema do próprio jogo, desenham o ícone dele em pixel art no Kodland Sparks e o publicam.',
+    needs:['boCourse'],
+    lockMsg:'🔒 Abra o curso no Backoffice (seção «Revise a primeira aula no Backoffice») e revise a aula para liberar a verificação.',
     offer:[['🕰️','Conhecer os dados gerais do curso e o programa.'],['🏆','Saber o que o aluno conquista no fim do curso.'],['📖','Saber o que acontece na primeira aula.'],['📘','Revisar a primeira aula no Backoffice.']],
     sections:[
       { id:'ov', e:'🕰️', title:'O curso', blocks:[
@@ -127,7 +131,8 @@ COURSE.modules = [
       ]},
       { id:'bo', e:'📘', title:'Revise a primeira aula no Backoffice', blocks:[
         { t:'p', html:'Antes da verificação, abra o curso no Backoffice e revise a primeira aula no seu ritmo — os cartões de atividade e as Teacher Notes estão todos lá. Não há tempo limite.' },
-        { t:'link', href:'https://bo.kodland.org/courses/2200', e:'📘', title:'Abrir o curso no Backoffice', small:'[2200] Criatividade Digital 1 — as aulas e as Teacher Notes' },
+        { t:'callout', kind:'pink', e:'📌', html:'Para estar preparado para sua primeira aula, é importante que você verifique como os materiais do curso estão organizados e apresentados.<br><br>Lembre-se de que este é um novo ID de curso: <b>2200</b>.<br><br><b>Importante:</b> verifique cada uma das turmas atribuídas a você. Se você recebeu uma nova turma, certifique-se de conferir o ID do curso, estudar a aula correspondente e seguir as orientações para o tutor. Isso ajudará você a se preparar e conduzir uma aula de sucesso.<br><br><b>Depois de revisar a aula, você poderá desbloquear o próximo módulo.</b>' },
+        { t:'link', flag:'boCourse', href:'https://bo.kodland.org/courses/2200', e:'📘', title:'Abrir o curso no Backoffice', small:'[2200] Criatividade Digital 1 — as aulas e as Teacher Notes' },
         { t:'callout', kind:'warn', e:'🔄', html:'O conteúdo das aulas no Backoffice é atualizado continuamente. A partir do feedback de alunos e tutores, as aulas passam por melhorias constantes. Quando houver mudanças, você será avisado com antecedência para preparar a aula.' }
       ]}
     ]},
